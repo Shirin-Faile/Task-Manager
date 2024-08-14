@@ -1,0 +1,33 @@
+@import 'variables';
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    background-color: $background-color;
+}
+
+.container {
+    padding: $padding;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: $padding / 2;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+}

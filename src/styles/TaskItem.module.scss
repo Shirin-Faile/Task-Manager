@@ -1,0 +1,30 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $padding;
+    margin: $margin;
+    background-color: white;
+    border: 1px solid #ccc;
+    font-weight: 500;
+    
+
+    input[type="checkbox"] {
+       margin-right: $padding; 
+    }
+
+    span {
+        flex-grow: 1;
+    }
+
+    &.completed {
+        text-decoration: line-through;
+    }
+
+    button {
+        @include button-styles($background-color:transparent, $color: $primary-color);
+    }
+}
