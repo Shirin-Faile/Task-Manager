@@ -1,5 +1,12 @@
+// TaskItem.module.scss
 @import '../styles/variables';
 @import '../styles/mixins';
+
+.taskContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .taskItem {
     display: flex;
@@ -10,8 +17,8 @@
     background-color: white;
     border: 1px solid #ccc;
     font-weight: 500;
+    width: 80%;
     
-
     input[type="checkbox"] {
        margin-right: $padding; 
     }
@@ -25,6 +32,6 @@
     }
 
     button {
-        @include button-styles($background-color:transparent, $color: $primary-color);
+        @include button-styles($background-color: transparent, $color: $primary-color);
     }
 }
