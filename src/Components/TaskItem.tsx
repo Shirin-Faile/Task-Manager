@@ -8,7 +8,7 @@ interface TaskItemProps {
     deleteTask: (id: string) => void;
 }
 
-const TaskItem: React.FC<TaskItemProps> = ({ task, toggleComplete, deleteTask}) => {
+const TaskItem = ({ task, toggleComplete, deleteTask }: TaskItemProps) => {
     return (
         <div className={styles.taskContainer}>
             <div className={`${styles.taskItem} ${task.completed ? styles.completed : ''}`}>

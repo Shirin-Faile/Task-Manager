@@ -8,7 +8,7 @@ interface TaskListProps {
     deleteTask: (id: string) => void;
 }
 
-const TaskList: React.FC<TaskListProps> = ({ tasks, toggleComplete, deleteTask}) => {
+const TaskList = ({ tasks, toggleComplete, deleteTask }: TaskListProps) => {
     return (
         <div>
             {tasks.length > 0 ? (

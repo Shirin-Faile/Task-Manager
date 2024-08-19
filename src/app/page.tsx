@@ -5,7 +5,7 @@ import TaskForm from "@/Components/TaskForm";
 import TaskList from "@/Components/TaskList";
 import { Task } from "@/types/Task";
 
-const Home: React.FC = () => {
+const Home = () => {
   const [tasks, setTasks] = useState<Task[]>(() => {
     const savedTasks = localStorage.getItem('tasks');
     return savedTasks ? JSON.parse(savedTasks) : [];

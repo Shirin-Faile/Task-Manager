@@ -6,7 +6,7 @@ interface TaskFormProps {
     addTask: (task: Task) => void;
 }
 
-const TaskForm: React.FC<TaskFormProps> = ({ addTask }) => {
+const TaskForm = ({ addTask }: TaskFormProps) => {
     const [taskText, setTaskText] = useState('');
 
     const handleSubmit = (e: FormEvent) => {
